@@ -1,0 +1,126 @@
+.JobSearch-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 16px;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.jobSearch-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.JobSearch-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+  padding: 8px;
+
+  cursor: pointer;
+}
+
+/*タグ*/
+.tag-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.tag-list button {
+  width: 100%;
+  height: 44px;
+
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+
+  background-color: #ffffff;
+
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tag-section {
+  padding: 28px 20px;
+}
+
+.tag-section h2 {
+  margin: 0 0 18px;
+  font-size: 18px;
+}
+
+.search-condition-button {
+  display: block;
+  width: calc(100% - 40px);
+  height: 48px;
+
+  margin: 24px auto 32px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: blue;
+  color: white;
+
+  font-size: 15px;
+  font-weight: bolt;
+
+  cursor: pointer;
+}
+
+/*職種カード*/
+.job-section {
+  padding: 0 20px;
+}
+
+.job-section h2 {
+  margin: 0 0 16px;
+  font-size: 18px;
+}
+
+.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.job-card {
+  padding: 18px;
+
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+
+  background-color: #ffffff;
+}
+
+.job-card h3 {
+  margin: 0 0 10px;
+  font-size: 17px;
+}
+
+.job-card p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/*職種タグ*/
+.job-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.job-tags span {
+  padding: 4px 8px;
+
+  border-radius: 6px;
+
+  background-color: #f2f2f2;
+
+  font-size: 12px;
+}

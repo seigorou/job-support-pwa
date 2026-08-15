@@ -1,13 +1,26 @@
+/*ナビゲーションバーの分だけ下に余白を*/
+main {
+  padding-bottom: 80px;
+}
+
+/* ヘッダー */
+
 .JobSearch-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  background-color: white;
+
   padding: 20px 16px;
 
   border-bottom: 1px solid #ddd;
 }
 
-.jobSearch-header h1 {
+.JobSearch-header h1 {
   margin: 0;
   font-size: 24px;
 }
@@ -24,7 +37,17 @@
   cursor: pointer;
 }
 
-/*タグ*/
+/* タグ */
+
+.tag-section {
+  padding: 28px 20px;
+}
+
+.tag-section h2 {
+  margin: 0 0 18px;
+  font-size: 18px;
+}
+
 .tag-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -44,14 +67,7 @@
   cursor: pointer;
 }
 
-.tag-section {
-  padding: 28px 20px;
-}
-
-.tag-section h2 {
-  margin: 0 0 18px;
-  font-size: 18px;
-}
+/* 検索ボタン */
 
 .search-condition-button {
   display: block;
@@ -67,17 +83,18 @@
   color: white;
 
   font-size: 15px;
-  font-weight: bolt;
+  font-weight: bold;
 
   cursor: pointer;
 }
 
-/*職種カード*/
-.job-section {
+/* 職種カード */
+
+.jobs-section {
   padding: 0 20px;
 }
 
-.job-section h2 {
+.jobs-section h2 {
   margin: 0 0 16px;
   font-size: 18px;
 }
@@ -108,7 +125,8 @@
   line-height: 1.6;
 }
 
-/*職種タグ*/
+/* 職種タグ */
+
 .job-tags {
   display: flex;
   flex-wrap: wrap;

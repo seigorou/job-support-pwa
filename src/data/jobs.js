@@ -1,6 +1,6 @@
 import { DessertIcon } from "lucide-react";
 
-const tags = [
+const jobs = [
   {
     id: 1,
     name: "システムエンジニア",

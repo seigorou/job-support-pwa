@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Search } from "lucide-react";
 import "../styles/JobSearch.css";
 import tags from "../data/tags";
@@ -24,16 +23,19 @@ function JobSearch() {
           ))}
         </div>
       </section>
+
       <button className="search-condition-button">この条件で探す</button>
 
       <section className="jobs-section">
         <h2>おすすめの職種</h2>
+
         <div className="job-list">
           {jobs.map((job) => (
             <article className="job-card" key={job.id}>
               <h3>{job.name}</h3>
+
               <div className="job-tags">
-                {PiFileJpgBold.tags.map((tag) => (
+                {job.tags.map((tag) => (
                   <span key={tag}>{tag}</span>
                 ))}
               </div>
@@ -46,4 +48,5 @@ function JobSearch() {
     </main>
   );
 }
+
 export default JobSearch;

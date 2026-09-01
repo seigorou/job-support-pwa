@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { House, Search, Calendar, Settings } from "lucide-react";
+import { House, Search, Calendar, Settings, LogIn } from "lucide-react";
 
 function Navbar() {
   return (
@@ -23,6 +23,14 @@ function Navbar() {
       >
         <Calendar size={24} />
         <span>カレンダー</span>
+      </NavLink>
+
+      <NavLink
+        to="/login"
+        className={({ isActive }) => (isActive ? "active" : "")}
+      >
+        <LogIn size={24} />
+        <span>ログイン(仮)</span>
       </NavLink>
 
       <NavLink
